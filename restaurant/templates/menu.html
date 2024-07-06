@@ -5,13 +5,15 @@
 <!--Begin col-->
 <div class="column">
     {% for item in menu.menu %}
-   <p>
-      {{ item.name }}
-      <span class="menu-price">
-         ${{ item.price }}.00 
-      </span>
-   </p>
-   {% endfor %}
+    <p>
+        <a href= "{% url 'menu_item' pk=item.pk %}">
+            {{ item.name }}
+        </a>
+        <span class="menu-price">
+            ${{ item.price }}.00
+        </span>
+    </p>
+    {% endfor %}
 </div>
 <!--End col-->
 {% endblock %}
