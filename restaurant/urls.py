@@ -6,5 +6,6 @@ urlpatterns = [
     path('', views.home, name="home"),
     path('about/', views.about, name="about"),
     path('book/', views.book, name="book"),
+    path('menu/', views.menu, name="menu"),
     # Add the remaining URL path configurations here
 ]
